@@ -1,10 +1,24 @@
 {
-  "name": "my-video",
+  "name": "remotion-demo",
   "version": "1.0.0",
-  "description": "My Remotion video",
-  "repository": {},
-  "license": "UNLICENSED",
-  "private": true,
+  "description": "Professional product launch video demo created with Remotion - showcasing React-based video creation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/remotion-demo"
+  },
+  "license": "MIT",
+  "private": false,
+  "author": "Your Name",
+  "keywords": [
+    "remotion",
+    "video",
+    "react",
+    "product-launch",
+    "animation",
+    "typescript",
+    "demo",
+    "showcase"
+  ],
   "dependencies": {
     "@remotion/cli": "4.0.407",
     "@remotion/zod-types": "4.0.407",
@@ -25,7 +39,7 @@
   },
   "scripts": {
     "dev": "remotionb studio",
-    "build": "remotionb bundle",
+    "build": "remotionb render TaskFlow out/taskflow.mp4",
     "upgrade": "remotionb upgrade",
     "lint": "eslint src && tsc"
   },
